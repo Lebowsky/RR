@@ -28,10 +28,17 @@ with open(full_path_name, encoding='utf-8')as file_ibases:
 # with open('bases.txt', 'w', encoding='utf-8') as file_bases:
 #     file_bases.write('\n'.join(bases))
 
-import shelve
-import pprint
+# import shelve
+# import pprint
+# # with shelve.open('shelve_bases') as shelveFile:
+# #     shelveFile['bases'] = bases
+#
 # with shelve.open('shelve_bases') as shelveFile:
-#     shelveFile['bases'] = bases
+#     print(pprint.pformat(shelveFile['bases']))
 
-with shelve.open('shelve_bases') as shelveFile:
-    print(pprint.pformat(shelveFile['bases']))
+# import random
+# random.shuffle(bases)
+# print(bases)
+
+import pyperclip
+print(pyperclip.paste())
